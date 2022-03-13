@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+::-webkit-scrollbar{
+  width: 1rem;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(230deg,#e25282 0%,#e9a05c 100%);
+  border-radius: 10px;
+}
+.bgck {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 120rem;
+  min-height: 67.5rem;
+  z-index: -999;
+  transform: translateX(-50%) translateY(-50%);
+}
+.bgck img {
+  opacity: 0.35;
+  width: 120rem;
+  height: 67.5rem;
+}
+body > img {
+  position: absolute;
+  z-index: 9999;
+}
+/* 版心 */
+.w {
+  width: 71rem;
+}
+/* 居中 */
+.margin {
+  margin: 0 auto;
+}
+@font-face {
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot?wrez6j");
+  src: url("fonts/icomoon.eot?wrez6j#iefix") format("embedded-opentype"),
+    url("fonts/icomoon.ttf?wrez6j") format("truetype"),
+    url("../fonts/icomoon.woff?wrez6j") format("woff"),
+    url("../fonts/icomoon.svg?wrez6j#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+/* 背景切换 */
+.tit{
+  position: relative;
+  position: fixed;
+  top: 8rem;
+  left: 5rem;
+  z-index: 99;
+  transition: all .5s;
+  width: 14rem;
+  height: 3rem;
+  line-height: 3rem;
+  background-color: teal;
+  border-radius: 10px;
+  font-weight: 700;
+  font-family: "宋体";
+  text-align: center;
+  font-size: 1.5rem;
+}
+.bgc {
+  position: relative;
+  position: fixed;
+  width: 14rem;
+  overflow: hidden;
+  top: 12rem;
+  left: 5rem;
+  z-index: 9;
+  transition: all .6s;
+}
+.bgc img {
+  margin-top: 1rem;
+  width: 14rem;
+  height: 8rem;
+  border-radius: 1rem;
+}
+#none{
+  display: none;
+}
+.bgc:hover{
+  padding: 1rem 1rem;
+  left: 0;
+  padding-left: 0;
+  width: 100vw;
+  background-color:teal;
+  border-radius: 1rem;
+  z-index: 999;
+}
+.bgc:hover .tit{
+  background-color: #fff;
+  color: black;
+ 
+}
+.grand{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+  position: absolute;
+  top: 1rem;
+  left: 14rem;
+}
+.grand li{
+  margin-left: 1rem;
+}
+.menu {
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+ 
+  align-items: center;
+  height: 3.5rem;
+  background-color: #310d0d;
+  z-index: 5;
+}
+.logo img {
+  margin: 4rem 0 0 5rem;
+  width: 7rem;
+  height: 7rem;
+}
+.show {
+  position: absolute;
+  left: 14rem;
+  color: white;
+}
+.nav ul {
+  position: absolute;
+  left: 9rem;
+  position: relative;
+  display: flex;
+  
+}
+.nav ul li {
+  /* margin-right: 1rem; */
+  width: 7rem;
+  line-height: 3rem;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  z-index: 10;
+}
+.hov{
+  position: absolute;
+  width: 7rem;
+  height: 3rem;
+  left: 0;
+  top: 0;
+  transition: all .5s;
+  background-color:orange;
+  border-radius: 10px 20px 10px 20px;
+  z-index: 5;
+}
+.nav ul li::before {
+  vertical-align: bottom;
+  padding-right: 0.5rem;
+  font-family: "icomoon";
+  color: rgb(108, 218, 163);
+}
+.nav ul li:nth-child(1)::before {
+  content: "";
+}
+.nav ul li:nth-child(2)::before {
+  content: "";
+}
+.nav ul li:nth-child(3)::before {
+  content: "";
+}
+.nav ul li:nth-child(4)::before {
+  content: "";
+}
+.nav ul li:nth-child(5)::before {
+  content: "";
+}
+.nav ul li:nth-child(6)::before {
+  content: "";
+}
+.nav ul li a {
+  font-family: "宋体";
+  font-weight: 700;
+  color: white;
+}
+
+/* .nav ul li:hover {
+   border-left: rgb(134, 240, 134) 1px solid; 
+  background-color: teal;
+} */
+.serch {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 15rem;
+  height: 3.5rem;
+}
+.serch input {
+  width: 100%;
+  height: 65%;
+  border: 1px solid teal;
+  border-radius: 2rem;
+  padding: 10px 25px;
+  outline: none;
+  font-size: 1rem;
+  color: teal;
+  text-indent: 1.2rem;
+}
+.serch label {
+  position: absolute;
+  left: 0.5rem;
+}
+.serch label::before {
+  padding-right: 0.5rem;
+  font-family: "icomoon";
+  color: rgb(108, 218, 163);
+  font-size: 2rem;
+  content: "";
+}
+
+.login {
+  margin-right: 4rem;
+  font-size: 1.5rem;
+}
+.login a {
+  color: white;
+}
+.login span {
+  color: white;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>注册</title>
+
+        <link rel="stylesheet" href="css/register.css">
+        <!-- 分页共有样式 -->
+        <link rel="stylesheet" href="css/listcommen.css">
+        <!-- <link rel="stylesheet" href="css/commen.css"> -->
+
+    </head>
+
+    <body>
+        <img src="img/shu.png" alt="">
+        <!-- 侧边栏 start -->
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i id="btn"></i>
+            <i id="cancel"></i>
+        </label>
+        <div class="sidebar">
+            <header> Login</header>
+            <ul>
+                <a href="index.html">
+                    <li><span> 首页 </span></li>
+                </a>
+                <a href="music.html">
+                    <li><span> 音乐</span></li>
+                </a>
+                <a href="photo.html">
+                    <li><span> 图片 </span></li>
+                </a>
+                <a href="#">
+                    <li><span>留言 </span></li>
+                </a>
+                <a href="#">
+                    <li><span>关于 </span></li>
+                </a>
+                <a href="#">
+                    <li><span> 代码 </span></li>
+                </a>
+                <a href="register.html">
+                    <li><span>注册 </span></li>
+                </a>
+            </ul>
+            <div class="show">
+                <h2></h2>
+                <p></p>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- 侧边栏 end -->
+        <div class="bgck">
+            <img src="img/1.jpg" alt="">
+        </div>
+        <div class="bgc">
+            <div class="tit">点击背景切换</div>
+            <ul id="none">
+                <li><img src="img/1.jpg" alt=""></li>
+                <li><img src="img/2.jpg" alt=""></li>
+                <li><img src="img/3.jpg" alt=""></li>
+                <li><img src="img/4.jpg" alt=""></li>
+
+            </ul>
+        </div>
+        <form action="">
+            <div class="container">
+                <div class="login-box ">
+                    <div class="title">xinyue</div>
+                    <div class="input margin-top">
+                        <label for="username">邮箱</label>
+                        <input type="text" id="login-user" placeholder="请输入邮箱">
+                    </div>
+                    <div class="input cos">
+                        <label for="userpasswer">密码</label>
+                        <input type="password" placeholder="请输入密码" id="psw">
+                        <img src="img/close.png" alt="" id="eyeone">
+                    </div>
+
+                    <div class="btn login-brn">
+                        <span>登录</span>
+                    </div>
+                    <div class="change-box login-change">
+                        <div class="change-btn toSign">
+                            <span>去注册</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sign-box ">
+                    <div class="chec">
+                        <div id="chec">
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <div class="title">xinyue</div>
+                    <div class="input">
+                        <label for="username">邮箱</label>
+                        <input type="text" id="sign-user" class="user" placeholder="请输入邮箱">
+                    </div>
+                    <div class="input bos q">
+                        <label for="userpasswer">密码</label>
+                        <input type="password" placeholder="请输入密码 6-16位" class="pass" id="pswt">
+                        <img src="img/close.png" alt="" id="eyetwo">
+                    </div>
+                    <div class="input bose que q">
+                        <label for="userpasswer">确认密码</label>
+                        <input type="password" placeholder="请确认密码 6-16位" class="repass" id="pswte">
+                        <img src="img/close.png" alt="" id="eyetwo">
+                    </div>
+
+                    <div class="btn sign-brn">
+                        <span>注册</span>
+                    </div>
+                    <div class="change-box sign-change">
+                        <div class="change-btn toLogin">
+                            <span>去登录</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </body>
+    <script src="script/register.js"></script>
+    <script src="script/com.js"></script>
+    <script src="script/listcom.js"></script>
+
+</html>

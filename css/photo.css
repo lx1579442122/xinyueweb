@@ -1,0 +1,55 @@
+/* 手风琴 */
+.bd{
+    display: flex;
+    justify-content: flex-end;
+    /* width: 98vw; */
+    /* height: 2000px; */
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    transform: translateX(-50%);  
+    z-index: 9;
+}
+.wrap{
+    width:98vw;
+    display: flex;
+}
+.card {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:auto 100%;
+    flex: .5;
+    height: 50rem;
+    border-radius: 6px;
+    opacity: .9;
+    transition: all .8s ease-out;
+}
+.card.active{
+    flex: 4;
+    transition:all .5s ease-in;
+}
+/* @media(max-width:500px){
+    .wrap{
+        width: 100vw;
+    }
+    .card:nth-child(4){
+        display: none;
+    }
+    .card:nth-child(5){
+        display: none;
+    }
+} */
+/* 背景 */
+section{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 120rem;
+    min-height: 67.5rem;
+    z-index: -999;
+    transform: translateX(-50%) translateY(-50%);
+    background: url(../img/1.jpg) no-repeat;
+    background-position: center;
+    background-size: 100%;
+    opacity: .6;
+}

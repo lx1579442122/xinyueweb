@@ -1,0 +1,108 @@
+/* 播放 */
+.photo{
+    position: absolute;
+    top: 4rem;
+    left: 20rem;
+    width: 75rem;
+    height: 44rem;
+    background: linear-gradient(230deg,#f189ab,#62e4d2)fixed;
+    margin: 50px auto;
+    font-size: "微软雅黑 Light";
+    color: #2c606d;
+    border-radius: 1rem;
+}
+
+.title{
+    margin-top: 5px;
+    width: 100%;
+    height: 70px;
+    font-size: 32px;
+    text-align: center;
+    line-height: 70px;
+}
+
+.singer{
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.play{
+    width: 152px;
+    height: 163px;
+    background-image: url("../img/play.png");
+    background-repeat: no-repeat;
+    margin: 20px auto;
+}
+
+.lrc{
+    width: 30%;
+    height: 220px;
+    margin: 50px auto;
+    text-align: center;
+    overflow: auto;
+    
+}
+::-webkit-scrollbar{
+    width: 1rem;
+    
+  }
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(230deg,#f54982 0%,#26e4ca 100%);
+    border-radius: 1rem;
+    height: 2rem;
+}
+
+.lrc p{
+    line-height: 20px;
+    font-size: 15px;
+}
+
+.content{
+    position: relative;
+}
+
+.play.rotate{
+    -webkit-animation: rot 5s linear infinite;
+    animation: rot 5s linear infinite;
+}
+.menu{
+   width: 75rem;
+    height: 4rem;
+    border-radius: 10px;
+    
+}
+
+
+@keyframes rot{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* 进度条组件和切换曲目组件 */
+/* .menu {
+    width: 75rem;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border: teal 1px solid;
+} */
+
+
+/* 背景 */
+section{
+    background: url(../img/1.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: all .5s;  
+    opacity: .6;
+}

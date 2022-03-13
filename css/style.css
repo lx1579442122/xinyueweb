@@ -1,0 +1,618 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 右侧公众号 */
+.gong{
+   
+    /* position: absolute; */
+    position: fixed;
+    width: 16rem;
+    top:22rem;
+    left: 98rem;
+    border-radius: .625rem;
+    background-color: teal;
+}
+.gong span{
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+.gong img{
+    position: absolute;
+    top:2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 1.5rem;
+    width: 50%;
+}
+/* 右侧导航栏 */
+.cation{
+    /* padding: 3rem 1rem; */padding-bottom: 2rem;
+    display: flex;
+    /* position: fixed; */
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    width: 12rem;
+    top:43rem;
+    right: 14rem;
+    border-radius: .625rem;
+    /* background-color: teal; */
+    font-size: 2rem;
+    z-index: 9;
+}
+.cation .top{
+    display: none;
+}
+.cation div
+/* .cation div:nth-child(3),
+.cation div:nth-child(4){ */
+{
+    margin-top: 1rem;
+    padding: 0 1rem;
+    width: 4rem;
+    height: 6rem;
+    background-color: orange;
+    border-radius: 5px;
+}
+
+.cation  div a{
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+.cation div a:hover{ 
+    /* color: teal; */
+}
+
+/* 轮播 */
+.lunbo{
+    height: 43rem;
+}
+.swiper {
+    top:4rem;
+    /* left:50%;
+    transform: translateX(-50%); */
+    width: 68rem;
+    height: 38rem;
+}
+
+.swiper-scrollbar-drag {
+    background-color: #fff!important;
+}
+
+.swiper-pagination span {
+    background-color: #fff;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: white!important;
+}
+
+.swiper-wrapper {
+    border-radius: 10px;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+
+.content{
+  height: 200rem;
+}
+.recommend{
+    width: 50rem;
+    height: 3rem;
+    background-color:#310D0D;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 3rem;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1rem;
+    border-radius: .45rem;
+}
+.new{
+    margin-top: 1rem;
+    height: 23.125rem;
+}
+.new ul{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    row-gap: 1rem;
+    justify-items: center;
+}
+.new ul li{
+    position: relative;
+    border-radius: .4rem;
+    overflow: hidden;
+    height: 10rem; 
+}
+.new ul li:hover{ 
+    transform: scale(1.05);
+    transition: .1s; 
+}
+.new ul li img{
+    width: 16rem;
+    height: 95%;
+}
+.new ul li div{
+    display: none;
+    position: absolute;
+    padding: 0 1rem;
+    bottom: 0;
+    background-color: teal;
+}
+.new ul li span{
+    width: 100%;
+    height: 2.8rem;
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+   /* 下面这句用来控制行数 */
+   -webkit-line-clamp: 2;  
+   -webkit-box-orient: vertical;
+}
+.new ul li span:hover{
+    overflow: visible;
+}
+/* js添加最新推荐 小li群border效果 */
+.br{
+    border: 0.2rem solid teal;
+    box-shadow: 10px 5px 5px black;
+
+}
+/* 博客内容 */
+.con{
+    margin: 0 auto;
+    width: 85rem;
+}
+.blog {
+    opacity: .8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.blog .left {
+ 
+    /* margin-left: 50px; */
+    z-index: 1;
+}
+
+.blog .left div span {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.blog .right {
+    flex: 3;
+    opacity: 0.85;
+    margin-left: 40px;
+}
+
+.item .blog-item {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 5px 30px;
+}
+
+.left .item .blog-item {
+    margin-top: 1rem;
+    width: 70rem;
+    height: 14rem;
+    background-color: #fff;
+    border: 1px solid teal;
+    border-radius: 5px;
+}
+
+.blog-item .lf {
+    position: relative;
+    padding: 0 10px;
+    flex: 7;
+}
+
+.blog-item .lf h2 {
+    padding-bottom: 15px;
+    margin-left: -15px;
+}
+
+.blog-item .lf a {
+    font-size: 1.3rem;
+    color: black;
+}
+
+.blog-item .rt {
+    margin-top: 1rem;
+    flex: 2.4;
+}
+
+.right .cation {
+    margin-top: 10px;
+    width: 250px;
+    height: 240px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.right .cation .s {
+    height: 50px;
+    line-height: 50px;
+    border-bottom: solid 2px teal;
+}
+
+.right .cation .s span::before {
+    font-family: 'icomoon';
+    content: '';
+    color: rgb(0, 255, 85);
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.right .cation .s span {
+    display: block;
+    float: left;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.right .cation .s a {
+    float: right;
+    color: black;
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+
+
+.right .cation .x {
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 220px;
+    border: solid 2px #e0e1e1;
+    border-radius: 5px;
+}
+
+.cation .x span {
+    display: block;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 18px;
+    border-bottom: solid 1px #e0e1e1;
+}
+
+.cation .x span:hover {
+    background-color: rgb(80, 214, 185);
+}
+
+.cation .x span a {
+    color: black;
+    font-size: 16px;
+}
+
+.cation .x span i {
+    margin-top: 8px;
+    margin-right: 20px;
+    display: block;
+    float: right;
+    width: 30px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    text-align: center;
+    border: solid 1px teal;
+    border-radius: 5px;
+}
+
+.right .cation .x .bor {
+    border: 0;
+}
+
+.right .code {
+    position: relative;
+    margin-top: 20px;
+    width: 250px;
+    height: 220px;
+    border-radius: 5px;
+    border-top: solid 2px teal;
+    border-bottom: solid 2px teal;
+    background-color: #fff;
+}
+.blog-item .rt img {
+    border-radius: 5px;
+    width: 80%;
+}
+.bt-like {
+    position: absolute;
+    bottom: 0.5rem;
+    margin-left: -20px;
+    margin-top: 8px;
+    width: 280px;
+    height: 25px;
+}
+
+.lf .bt-like ul li a {
+    font-size: 14px;
+}
+
+.bt-like ul li {
+    list-style: none;
+    padding: 0 12px;
+}
+
+.lf .bt-like ul {
+    display: flex;
+}
+
+.bt-like ul:nth-child(1) img {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+
+.bt-like ul :nth-child(2) a {
+    color: black;
+}
+
+.bt-like ul :nth-child(2) {
+    padding: 0;
+}
+
+.bt-like ul :nth-child(3) a::before {
+    font-family: 'icomoon';
+    color: rgb(0, 0, 0);
+    content: '';
+    font-size: 1rem;
+}
+
+.bt-like ul :nth-child(4) a::before {
+    font-family: 'icomoon';
+    content: '';
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    padding-right: 2px;
+}
+
+.bt-like ul :nth-child(5) a::before {
+    font-family: 'icomoon';
+    content: '';
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    padding-right: 3px;
+}
+
+.bt-like ul :nth-child(3),
+.bt-like ul :nth-child(4),
+.bt-like ul :nth-child(5) {
+    padding-top: 2px;
+}
+
+.bt-like ul :nth-child(3) a {
+    color: black;
+}
+
+.like {
+    width: 3.45rem;
+    height: 1.5rem;
+    border: solid 1px teal;
+    margin-top: 7px;
+    border-radius: 5px;
+    float: left;
+    margin-right: 26px;
+}
+
+.rt .last {
+    margin-right: 0;
+}
+.rt .fl{
+    margin-top: 0.35rem;
+}
+.like a {
+    margin-left: 7px;
+    font-size: 1rem;
+    color:orange;
+}
+
+.like:hover  {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.like a::before {
+ 
+    font-family: 'icomoon';
+    content: '';
+    color: rgb(108, 218, 163);
+    font-size: .7rem;
+}
+/* 分页 */
+.pag{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination ul{
+    display: flex;
+    background-color: rgba(76, 128, 170, 0.856);
+    padding: .5rem;
+    border-radius: 3rem;
+}
+.pagination ul li{
+    line-height: 3rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer; 
+    transition: all .3s ease;
+}
+.pagination ul li.numb{
+    margin: 0 3px;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+}
+.pagination ul li.dots{
+    font-size:1.4rem ;
+}
+.pagination ul li.btn{
+    /* background-color:rgb(100, 155, 192); */
+    padding: 0 1.25rem;
+   
+}
+.pagination ul li.prev{
+    border-radius: 25px 5px 5px 25px;
+}
+.pagination ul li.next{
+    border-radius: 5px 25px 25px 5px;
+}
+.pagination ul li.active,
+.pagination ul li.numb:hover,
+.pagination ul li.btn:hover{
+    background-color: rgb(82, 67, 167);
+    color: #fff;
+}
+/* 第三部分 */
+.tt{
+    width: 50rem;
+    text-align: center;
+    /* margin-top: 2rem; */
+    font-size: 5rem;
+  
+}
+/* areas排列 */
+.ct{
+    margin: 2rem auto;
+    padding: 1rem 0;
+    width:71rem ;
+    display: flex;
+    flex-direction: row-reverse;
+    border: 1px solid teal;
+    border-radius: 6px;
+    color: black;
+    background-color: white;
+    opacity: .7;
+}
+.b{
+    flex-direction: row;
+}
+.mag{
+    margin-left: .8rem;
+}
+.layout{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "aside main main"
+    "footer footer footer"; 
+    gap: .5rem; 
+   
+}
+.le{
+    /* width: 50rem; */
+  
+   
+}
+header{
+    grid-area: header;
+}
+aside{
+    grid-area: aside;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+header img{
+    width: 10rem;
+}
+aside img{
+    width: 20rem;
+}
+footer img {
+    width: 10rem;
+}
+img{
+    border-radius: 0.5rem;
+}
+/* 底部footer */
+.footer{
+    bottom: 0;
+    opacity: .8;
+    width: 100vw;
+    height: 20rem;
+    background-color: rgb(4, 29, 36);
+}
+.bd{
+    position: absolute;
+    left: 50%;
+  
+    transform: translateX(-50%);
+    width: 70rem;
+}
+.tp{
+    padding-top: 3rem;
+    height: 15rem;
+    color: white;
+}
+.tp ul{
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    border-bottom: 2px solid teal;
+}
+
+.tp ul li{
+    text-align: center;
+    padding: 1rem 1.5rem;
+    border-left: 2px solid teal;
+}
+.tp ul li:nth-child(1){
+    border-left: none;
+    flex: 1;
+}
+.tp ul li:nth-child(2){
+    flex: 3.2;
+}
+.tp ul li:nth-child(3){
+    flex: 5;
+}
+.tp ul li a,
+.bm span {
+    color: white;
+}
+.com h2,
+.tp ul li:nth-child(2) a h2{
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+.bm{
+    font-size: 1.5rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 4.8rem;
+}
+
