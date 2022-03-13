@@ -1,5 +1,4 @@
-                
-// 轮播 end
+           // 轮播 end
 // 最新推荐的隐藏span显示
 window.addEventListener('DOMContentLoaded', function () {
     let lis = document.querySelector('#block').querySelectorAll('li');
@@ -37,17 +36,13 @@ window.addEventListener('DOMContentLoaded', function () {
             bgck.src = this.src;
         }
     }
-     // 快速回到顶部以及对身体，底部的定义
-            // Window.onload = function () {
     let recommend = document.querySelector('.recommend');
     // console.log(recommend.offsetTop);
     let cation = document.querySelector('.cation');
     // 由于改为固定定位的时候，top值会复用，会跳动
     let to = cation.offsetTop - recommend.offsetTop + 330;
     let tp = document.querySelector('.cation').querySelector('.top');
-    // let body = document.querySelector('.body');
-    let foot = document.querySelector('.foot');
-    // let footer = document.querySelector('.footer');
+    let foot = document.querySelector('.cation').querySelector('.foot');
     document.addEventListener('scroll', function () {
         // console.log(window.pageXOffset);
         // 回到顶部属性设置
@@ -60,8 +55,6 @@ window.addEventListener('DOMContentLoaded', function () {
             cation.style.top = '43rem';
             tp.style.display = 'none';
         }
-        // 去到底部
-
     });
     // 回到顶部点击事件
     tp.addEventListener('click', function () {
@@ -76,7 +69,12 @@ window.addEventListener('DOMContentLoaded', function () {
         // 在第一页没有必要出现回到顶部这个按钮
     })
     // document.documentElement.scrollTop = 0;
-    // }
+    // 去到底部点击事件
+    
+    foot.addEventListener('click', function () { 
+        // 未解决像回到顶部一样步长逐渐减小的滚动动画
+        document.querySelector('.footer').scrollIntoView();
+    });
     //文本框placeholder获取焦点隐藏，失去焦点显示
     let iput = document.querySelector('.serch').querySelector('input')
     iput.onclick = function () {
@@ -85,7 +83,6 @@ window.addEventListener('DOMContentLoaded', function () {
     iput.onblur = function () {
         iput.placeholder = '搜索···';
     }
-
     // 轮播start
     var mySwiper = new Swiper('.swiper', {
         // direction: 'vertical', // 垂直切换选项
